@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>.NET and Delphi developer and more</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Own JS for copy e-mail to clipboard-->
+        <script lang="JavaScript">
+            function CopyEmailToClipBoard() {
+                var email_uname = "ttib22";
+                var email_provider = "gmail";
+                var email_domain = "com"
+                var email_dummy = document.createElement("input");
+                document.body.appendChild(email_dummy);
+                email_dummy.setAttribute("id", "dummy_id");
+                document.getElementById("dummy_id").value = email_uname + "@" + email_provider + "." + email_domain;
+                email_dummy.select();
+                email_dummy.setSelectionRange(0,99999);
+                document.execCommand("copy");
+                document.body.removeChild(email_dummy);
+                $("#copiedemail").modal('toggle');
+            }
+        </script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Tibor Támba
+                    <!--<img src="assets/img/navbar-logo.svg" alt="" />-->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>-->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To My Website!</div>
+                <div class="masthead-heading text-uppercase">C# .NET Framework Delphi</div>
+                <div class="masthead-subheading">developer</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#skills">Tell Me More</a>
+            </div>
+        </header>
+        <!-- Skills-->
+        <section class="page-section" id="skills">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Skills</h2>
+                    <h3 class="section-subheading text-muted">I have experiences in these technologies.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Programming languages</h4>
+                        <p class="text-muted">
+                            C#<br>Delphi (Object Pascal)<br>JavaScript
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Development environments</h4>
+                        <p class="text-muted">
+                            Microsoft Visual Studio<br>Lazarus<br>Delphi
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-crop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Framework</h4>
+                        <p class="text-muted">
+                            .NET Framework
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Database</h4>
+                        <p class="text-muted">
+                            LDAP<br>MySQL
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Other technologies</h4>
+                        <p class="text-muted">
+                            PHP<br>HTML/CSS<br>XML<br>Git<br>WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Some of my projects.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Video downloader UI</div>
+                                <div class="portfolio-caption-subheading text-muted">C#, .NET Framework</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Screen Brightness Controller service for notebooks</div>
+                                <div class="portfolio-caption-subheading text-muted">C#, .NET framework</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Multiplication and Division exercise for students</div>
+                                <div class="portfolio-caption-subheading text-muted">JavaScript, HTML, CSS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/comingsoon.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Applications for Student's Storage System in schools</div>
+                                <div class="portfolio-caption-subheading text-muted">Delphi, LDAP, Samba, Apache, PHP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/comingsoon.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Number card application for interactive tables</div>
+                                <div class="portfolio-caption-subheading text-muted">Delphi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/about/1.jpg" alt="" />
+                        <h4>Tibor Támba</h4>
+                        <p class="text-muted">Software Developer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/tibor-t%C3%A1mba-2a4742194/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div> 
+                    <h3 class="section-subheading text-muted">
+                        Welcome! I have mostly experience developing desktop applications in .NET Framework and Delphi.<br><br>
+                        I have been interested in computer science and programming since I was in high school and have been training myself ever since. In my free time I like to develop my own projects. 
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-primary">Contact</h2>
+                    <h3 class="section-subheading text-white">If you are interested in my work, I will be happy by receive an email from you!</h3>
+                </div>
+                <div class="">
+                    <!--<div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                        <div>+1 (555) 123-4567</div>
+                    </div>-->
+                    <div class="text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-primary"></i>
+                        <p class="d-block text-primary">ttib22 {at} gmail {dot} com</p>
+                        <button onclick="CopyEmailToClipBoard()" style="border: 0px; background-color: darkorange;">Copy to Clipboard</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <!--<footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right">
+                        <a class="mr-3" href="#!">Privacy Policy</a>
+                        <a href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>-->
+        <!-- Portfolio Modals-->
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Video downloader User Interface</h2>
+                                    <p class="item-intro text-muted">C#, .Net Framework, WinForms, Multi-thread programming, external process handling, ActiveX embedding</p>
+                                    <p>
+                                        This is a desktop application for Windows, a Graphical User Interface for an open source command line video downloader named youtube-dl.
+                                        The <a target="#blank" href="https://ytdl-org.github.io/youtube-dl/index.html">youtube-dl</a> is not my project.
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
+                                        Features:
+                                        <ul class="text-lg-left">
+                                            <li>Adding multiple videos to the list at once, even directly from the Clipboard.</li>
+                                            <li>List handling functions.</li>
+                                            <li>Multi-threading for querying information, format list, and downloading. (can be set)</li>
+                                            <li>Setting the available download format of the videos individually.</li>
+                                            <li>Converting media to various output format. (using FFmpeg)</li>
+                                            <li>Own update method for updating to the latest youtube-dl. (not using the built-in one)</li>
+                                            <li>Embedded Windows Media Player for quick playing downloaded media.</li>
+                                            <li>Adjustable languages: Hungarian, English</li>
+                                            <li>More settings options. (not all option yet that the youtube-dl provides)</li>
+                                            <li>Many supported websites depending from the youtube-dl program.</li>
+                                        </ul><br>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full2.jpg" alt="" />
+                                        <p>The project has two main parts:</p>
+                                        <ul class="text-lg-left">
+                                            <li>A wrapper library that provides an interface for programmers to control and receiving data from the command line downloader.<br>
+                                                With this library, requires minimal programming to easily create various UIs.</li>
+                                            <li>The User Interface that uses the library to create list of videos, query informations and download them.</li>
+                                        </ul>
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li><a target="#blank" href="https://github.com/tibor-tamba/UI_for_youtube-dl">The project on GitHub</a></li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Screen Brightness Control Sevice</h2>
+                                    <p class="item-intro text-muted">C#, .NET Framework, Windows Service</p>
+                                    <p>This smaller project is a Windows service. It can automatically adjust the brightness of a notebook's display when AC power connects or disconnects.
+                                        However the Windows itself can handle this event, but in certain cases and laptops it doesn't work. This program may solve this problem easily.</p>
+                                    <p>Features:</p>
+                                    <ul class="list-inline">
+                                        <li>Handle AC-DC Power events.</li>
+                                        <li>Configuration file for setting brightness to different states.</li>
+                                        <li>Creates log file.</li>
+                                    </ul>
+                                    <p><a target="blank" href="https://github.com/tibor-tamba/SBC">The project on GitHub</a></p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Multiplication and Division exercise for elementary students</h2>
+                                    <p class="item-intro text-muted">JavaScript, HTML, CSS</p>
+                                    <p class="text-muted">
+                                        This program is designed for elementary student to practise multiplication and division operation.<br>
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
+                                    <p>After starting the programs, 10 tasks must be solved. There is a short time for each task, which is indicated by a progress bar.
+                                        The calculated result can be entered on the on-screen keypads.
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full2.jpg" alt="" />
+                                    <p class="text-muted">When all tasks completed or the time has expired the program shows the results.</p>
+                                    <p>You can try these projects at links below:</p>
+                                    <ul class="list-inline">
+                                        <li><a target="#blank" href="https://github.com/tibor-tamba/multiplication_division_exercise">The project on GitHub</a></li>
+                                        <li><a target="#blank" href="https://tibor-tamba.github.io/multiplication_division_exercise/division.html">Division</a></li>
+                                        <li><a target="#blank" href="https://tibor-tamba.github.io/multiplication_division_exercise/multiplication.html">Multiplication</a></li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Applications for Student's Storage System in schools</h2>
+                                    <p class="item-intro text-muted">Delphi, LDAP, Samba, Apache, PHP</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/comingsoon.jpg" alt="" />
+                                    <p>Coming soon.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Number card application for interactive tables</h2>
+                                    <p class="item-intro text-muted">Delphi</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/comingsoon.jpg" alt="" />
+                                    <p>Coming soon.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copied e-mail-->
+        <div class="modal fade" id="copiedemail" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body text-center" style="align-content: center;">
+                                    <i class="fas fa-envelope fa-6x mb-3 text-primary"></i>
+                                    <p style="font-size: 1.5rem;">The e-mail address was copied to the Clipboard.</p>
+                                    <p></p>
+                                    <button class="close-modal" data-dismiss="modal" style="width: 40%; border: 0px; background-color: orange; font-size: 1.5rem;border-radius: 10px;">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
