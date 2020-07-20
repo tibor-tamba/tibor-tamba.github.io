@@ -181,10 +181,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/comingsoon.jpg" alt="" />
+                                <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Applications for Student's Storage System in schools</div>
+                                <div class="portfolio-caption-heading">Applications for Student's File Storage System in schools</div>
                                 <div class="portfolio-caption-subheading text-muted">Delphi, LDAP, Samba, Apache, PHP</div>
                             </div>
                         </div>
@@ -309,7 +309,17 @@
                                         <p>The project has two main parts:</p>
                                         <ul style="text-align: left;">
                                             <li>A wrapper library that provides an interface for programmers to control and receiving data from the command line downloader.<br>
-                                                With this library, requires minimal programming to easily create various UIs.</li>
+                                                With this library, from the developer requires minimal programming to easily create various UIs.<br>
+                                                Main features, classes:
+                                               <ul class="text-muted">
+                                                   <li>A .CHM documentation created with Sandcastle.</li>
+                                                   <li>A VideoItem class that contains all function to get informations about a video, download it, reporting progresses, etc.</li>
+                                                   <li>A VideoItemCollection class that provides functions that can handle many videos at once.
+                                                       It includes scheduling features that take into account the number of threads available.</li>
+                                                   <li>Pre-defined Settings class to store application wide settings.</li>
+                                                   <li>XML format definition file to define the downloader output string patterns, which the program can interpreting.</li>
+                                               </ul>
+                                            </li>
                                             <li>The User Interface that uses the library to create list of videos, query informations and download them.</li>
                                         </ul>
                                     </p>
@@ -407,10 +417,39 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase" style="font-size: 2rem;">Applications for Student's Storage System in schools</h2>
+                                    <h2 class="text-uppercase" style="font-size: 2rem;">Applications for student's file storage system in school environment</h2>
                                     <p class="item-intro text-muted">Delphi, LDAP, Samba, Apache, PHP</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/comingsoon.jpg" alt="" />
-                                    <p>Coming soon.</p>
+                                    <p>This project is an user file storage service. The users can store files on the server within their quota this is provided by samba and ldap server.
+                                        My programs provides the ability to login to the system, manage user accounts to administrators,
+                                        ability to change password for the users. I specialized this project for an elementary school environment.</p>
+                                    <h3>Login application</h3>
+                                    <p class="text-muted">Attaching network drive after logging in.
+                                        Display messages to the users which can be managed centrally through the database.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full1.jpg" alt="" />
+                                    <p>Program features:</p>
+                                    <ul style="text-align: left;">
+                                        <li>Can be logging in to the Samba share, attach it as a new drive</li>
+                                        <li>Opens an internet browser with the password changing webpage that I was wrote in PHP</li>
+                                        <li>Displays a message that set by the administrator</li>
+                                        <li>The message and settings are read from the database</li>
+                                    </ul><p></p>
+                                    <h3>Account manager</h3>
+                                    <p class="text-muted">This program is for the administrators and teachers.
+                                        The available functions depend on who logging in the program.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full2.jpg" alt="" />
+                                    <p class="text-muted">Managing accounts after logging in.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full3.jpg" alt="" />
+                                    <p>Program features:</p>
+                                    <ul style="text-align: left;">
+                                        <li>Listing all users within specified linux group</li>
+                                        <li>Filters can be applied to each field</li>
+                                        <li>If the accounts are locked during unsuccessful logins, can be unlocked</li>
+                                        <li>Resetting passwords</li>
+                                        <li>The selected users' directory can be viewed in a Windows Explorer window</li>
+                                        <li>The list can be saved to a text file</li>
+                                        <li>The year and class of the users can be changed</li>
+                                        <li>Preparing accounts to archiving for graduate student's account</li>
+                                    </ul><p></p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
                                         Close Project
