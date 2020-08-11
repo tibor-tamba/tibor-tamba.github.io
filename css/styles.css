@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #fed136;
+  color: brown;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2470,7 +2470,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
+  color: brown;
   background-color: #fed136;
   border-color: #fed136;
 }
